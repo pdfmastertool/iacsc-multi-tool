@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IACSC Tools - Professional Multi Tool Hub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Top Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-icon">⚙️</div>
+                <span class="logo-text">IACSC Tools</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#tools" class="nav-link">Tools</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Horizontal Sidebar -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <h3>Tool Categories</h3>
+            <button class="sidebar-toggle" id="sidebarToggle">×</button>
+        </div>
+        <div class="sidebar-content">
+            <div class="tool-category">
+                <div class="category-header" data-category="pdf">
+                    <span class="category-icon">📄</span>
+                    <span>PDF Tools</span>
+                    <span class="category-arrow">▼</span>
+                </div>
+                <div class="category-items">
+                    <div class="tool-item" data-tool="merge-pdf">🔗 Merge PDF</div>
+                    <div class="tool-item" data-tool="split-pdf">✂️ Split PDF</div>
+                    <div class="tool-item" data-tool="compress-pdf">🗜️ Compress PDF</div>
+                    <div class="tool-item" data-tool="pdf-to-word">📝 PDF to Word</div>
+                    <div class="tool-item" data-tool="word-to-pdf">📄 Word to PDF</div>
+                    <div class="tool-item" data-tool="pdf-to-ppt">📊 PDF to PowerPoint</div>
+                    <div class="tool-item" data-tool="ppt-to-pdf">📈 PowerPoint to PDF</div>
+                    <div class="tool-item" data-tool="pdf-to-excel">📋 PDF to Excel</div>
+                    <div class="tool-item" data-tool="excel-to-pdf">📊 Excel to PDF</div>
+                    <div class="tool-item" data-tool="pdf-to-jpg">🖼️ PDF to JPG</div>
+                    <div class="tool-item" data-tool="jpg-to-pdf">📷 JPG to PDF</div>
+                    <div class="tool-item" data-tool="organize-pdf">📑 Organize PDF</div>
+                    <div class="tool-item" data-tool="edit-pdf">✏️ Edit PDF</div>
+                    <div class="tool-item" data-tool="rotate-pdf">🔄 Rotate PDF</div>
+                    <div class="tool-item" data-tool="unlock-pdf">🔓 Unlock PDF</div>
+                    <div class="tool-item" data-tool="protect-pdf">🔐 Protect PDF</div>
+                    <div class="tool-item" data-tool="add-page-numbers">🔢 Add Page Numbers</div>
+                    <div class="tool-item" data-tool="add-watermark">💧 Add Watermark</div>
+                </div>
+            </div>
+            
+            <div class="tool-category">
+                <div class="category-header" data-category="image">
+                    <span class="category-icon">🖼️</span>
+                    <span>Image Tools</span>
+                    <span class="category-arrow">▼</span>
+                </div>
+                <div class="category-items">
+                    <div class="tool-item" data-tool="image-compressor">🗜️ Image Compressor</div>
+                    <div class="tool-item" data-tool="image-converter">🔄 Image Converter</div>
+                </div>
+            </div>
+
+            <div class="tool-category">
+                <div class="category-header" data-category="media">
+                    <span class="category-icon">🎵</span>
+                    <span>Media Tools</span>
+                    <span class="category-arrow">▼</span>
+                </div>
+                <div class="category-items">
+                    <div class="tool-item" data-tool="audio-converter">🎵 Audio Converter</div>
+                    <div class="tool-item" data-tool="video-compressor">🎬 Video Compressor</div>
+                </div>
+            </div>
+
+            <div class="tool-category">
+                <div class="category-header" data-category="utility">
+                    <span class="category-icon">🛠️</span>
+                    <span>Utility Tools</span>
+                    <span class="category-arrow">▼</span>
+                </div>
+                <div class="category-items">
+                    <div class="tool-item" data-tool="qr-generator">📱 QR Code Generator</div>
+                    <div class="tool-item" data-tool="password-generator">🔑 Password Generator</div>
+                    <div class="tool-item" data-tool="word-counter">📝 Word Counter</div>
+                    <div class="tool-item" data-tool="age-calculator">📅 Age Calculator</div>
+                    <div class="tool-item" data-tool="bmi-calculator">⚖️ BMI Calculator</div>
+                    <div class="tool-item" data-tool="color-picker">🎨 Color Picker</div>
+                    <div class="tool-item" data-tool="unit-converter">📏 Unit Converter</div>
+                    <div class="tool-item" data-tool="json-formatter">📋 JSON Formatter</div>
+                    <div class="tool-item" data-tool="text-to-speech">🗣️ Text to Speech</div>
+                    <div class="tool-item" data-tool="speech-to-text">🎤 Speech to Text</div>
+                    <div class="tool-item" data-tool="timer-stopwatch">⏱️ Timer/Stopwatch</div>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <h1 class="hero-title">Professional PDF & Document Tools</h1>
+                <p class="hero-subtitle">Convert, merge, split, and edit your documents with our comprehensive suite of professional tools</p>
+                <button class="cta-button" onclick="scrollToTools()">Start Using Tools</button>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-image">
+                    <div class="floating-card">
+                        <div class="card-icon">📄</div>
+                        <div class="card-text">PDF Tools</div>
+                    </div>
+                    <div class="floating-card">
+                        <div class="card-icon">🖼️</div>
+                        <div class="card-text">Image Tools</div>
+                    </div>
+                    <div class="floating-card">
+                        <div class="card-icon">🛠️</div>
+                        <div class="card-text">Utilities</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tools Grid -->
+        <section class="tools-section" id="tools">
+            <h2 class="section-title">Popular Tools</h2>
+            <div class="tools-grid">
+                <div class="tool-card" data-tool="merge-pdf">
+                    <div class="tool-icon">🔗</div>
+                    <h3>Merge PDF</h3>
+                    <p>Combine multiple PDF files into one document quickly and easily</p>
+                    <button class="tool-button">Select Files</button>
+                </div>
+                
+                <div class="tool-card" data-tool="split-pdf">
+                    <div class="tool-icon">✂️</div>
+                    <h3>Split PDF</h3>
+                    <p>Extract pages from your PDF or split into multiple documents</p>
+                    <button class="tool-button">Select Files</button>
+                </div>
+                
+                <div class="tool-card" data-tool="compress-pdf">
+                    <div class="tool-icon">🗜️</div>
+                    <h3>Compress PDF</h3>
+                    <p>Reduce PDF file size while maintaining quality</p>
+                    <button class="tool-button">Select Files</button>
+                </div>
+                
+                <div class="tool-card" data-tool="pdf-to-word">
+                    <div class="tool-icon">📝</div>
+                    <h3>PDF to Word</h3>
+                    <p>Convert PDF documents to editable Word files</p>
+                    <button class="tool-button">Select Files</button>
+                </div>
+                
+                <div class="tool-card" data-tool="word-to-pdf">
+                    <div class="tool-icon">📄</div>
+                    <h3>Word to PDF</h3>
+                    <p>Convert Word documents to PDF format</p>
+                    <button class="tool-button">Select Files</button>
+                </div>
+                
+                <div class="tool-card" data-tool="pdf-to-jpg">
+                    <div class="tool-icon">🖼️</div>
+                    <h3>PDF to JPG</h3>
+                    <p>Convert PDF pages to high-quality JPG images</p>
+                    <button class="tool-button">Select Files</button>
+                </div>
+
+                <div class="tool-card" data-tool="image-compressor">
+                    <div class="tool-icon">🗜️</div>
+                    <h3>Image Compressor</h3>
+                    <p>Reduce image file size without losing quality</p>
+                    <button class="tool-button">Select Files</button>
+                </div>
+                
+                <div class="tool-card" data-tool="qr-generator">
+                    <div class="tool-icon">📱</div>
+                    <h3>QR Code Generator</h3>
+                    <p>Create custom QR codes for any text or URL</p>
+                    <button class="tool-button">Generate QR</button>
+                </div>
+                
+                <div class="tool-card" data-tool="password-generator">
+                    <div class="tool-icon">🔑</div>
+                    <h3>Password Generator</h3>
+                    <p>Generate secure passwords with custom options</p>
+                    <button class="tool-button">Generate</button>
+                </div>
+            </div>
+            
+            <div class="view-all-tools">
+                <button class="view-all-button" onclick="toggleSidebar()">View All Tools</button>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features-section">
+            <div class="container">
+                <h2 class="section-title">Why Choose Our Tools?</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🚀</div>
+                        <h3>Fast Processing</h3>
+                        <p>Lightning-fast file processing with optimized algorithms for quick results</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🔒</div>
+                        <h3>100% Secure</h3>
+                        <p>Your files are processed locally in your browser and never uploaded to our servers</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📱</div>
+                        <h3>Works Everywhere</h3>
+                        <p>Compatible with all devices and browsers - desktop, tablet, and mobile</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">💰</div>
+                        <h3>Completely Free</h3>
+                        <p>All tools are free to use with no hidden costs or subscription fees</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about-section" id="about">
+            <div class="container">
+                <div class="about-content">
+                    <h2 class="section-title">About IACSC Tools</h2>
+                    <p>IACSC Tools is your comprehensive solution for document processing and file management. Our platform offers a wide range of professional-grade tools designed to handle all your PDF, image, and document conversion needs.</p>
+                    <p>Built with modern web technologies, our tools work entirely in your browser, ensuring your files remain private and secure. Whether you're a student, professional, or business owner, our intuitive interface makes complex document tasks simple and efficient.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section" id="contact">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3 class="contact-subtitle">Let's Talk</h3>
+                        <p class="contact-description">Have some big idea or brand to develop and need help? Then reach out we'd love to hear about your project and provide help.</p>
+
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <h4>Email</h4>
+                                <div class="contact-item-content">
+                                    <div class="contact-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill='#d41645' viewBox="0 0 479.058 479.058">
+                                            <path d="M434.146 59.882H44.912C20.146 59.882 0 80.028 0 104.794v269.47c0 24.766 20.146 44.912 44.912 44.912h389.234c24.766 0 44.912-20.146 44.912-44.912v-269.47c0-24.766-20.146-44.912-44.912-44.912zm0 29.941c2.034 0 3.969.422 5.738 1.159L239.529 264.631 39.173 90.982a14.902 14.902 0 0 1 5.738-1.159zm0 299.411H44.912c-8.26 0-14.971-6.71-14.971-14.971V122.615l199.778 173.141c2.822 2.441 6.316 3.655 9.81 3.655s6.988-1.213 9.81-3.655l199.778-173.141v251.649c-.001 8.26-6.711 14.97-14.971 14.97z"/>
+                                        </svg>
+                                    </div>
+                                    <div class="contact-text">
+                                        <small>Mail</small>
+                                        <strong>iacsccenter@gmail.com</strong>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <h4>Follow Us</h4>
+                                <div class="social-links">
+                                    <a href="https://www.facebook.com/indianagency.net" class="social-link" title="Facebook">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill='#d41645' viewBox="0 0 24 24">
+                                            <path d="M6.812 13.937H9.33v9.312c0 .414.335.75.75.75l4.007.001a.75.75 0 0 0 .75-.75v-9.312h2.387a.75.75 0 0 0 .744-.657l.498-4a.75.75 0 0 0-.744-.843h-2.885c.113-2.471-.435-3.202 1.172-3.202 1.088-.13 2.804.421 2.804-.75V.909a.75.75 0 0 0-.648-.743A26.926 26.926 0 0 0 15.071 0c-7.01 0-5.567 7.772-5.74 8.437H6.812a.75.75 0 0 0-.75.75v4c0 .414.336.75.75.75zm.75-3.999h2.518a.75.75 0 0 0 .75-.75V6.037c0-2.883 1.545-4.536 4.24-4.536.878 0 1.686.043 2.242.087v2.149c-.402.205-3.976-.884-3.976 2.697v2.755c0 .414.336.75.75.75h2.786l-.312 2.5h-2.474a.75.75 0 0 0-.75.75V22.5h-2.505v-9.312a.75.75 0 0 0-.75-.75H7.562z"/>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="social-link" title="LinkedIn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill='#d41645' viewBox="0 0 511 512">
+                                            <path d="M111.898 160.664H15.5c-8.285 0-15 6.719-15 15V497c0 8.285 6.715 15 15 15h96.398c8.286 0 15-6.715 15-15V175.664c0-8.281-6.714-15-15-15zM96.898 482H30.5V190.664h66.398zM63.703 0C28.852 0 .5 28.352.5 63.195c0 34.852 28.352 63.2 63.203 63.2 34.848 0 63.195-28.352 63.195-63.2C126.898 28.352 98.551 0 63.703 0zm0 96.395c-18.308 0-33.203-14.891-33.203-33.2C30.5 44.891 45.395 30 63.703 30c18.305 0 33.195 14.89 33.195 33.195 0 18.309-14.89 33.2-33.195 33.2zm289.207 62.148c-22.8 0-45.273 5.496-65.398 15.777-.684-7.652-7.11-13.656-14.942-13.656h-96.406c-8.281 0-15 6.719-15 15V497c0 8.285 6.719 15 15 15h96.406c8.285 0 15-6.715 15-15V320.266c0-22.735 18.5-41.23 41.235-41.23 22.734 0 41.226 18.495 41.226 41.23V497c0 8.285 6.719 15 15 15h96.403c8.285 0 15-6.715 15-15V302.066c0-79.14-64.383-143.523-143.524-143.523zM466.434 482h-66.399V320.266c0-39.278-31.953-71.23-71.226-71.23-39.282 0-71.239 31.952-71.239 71.23V482h-66.402V190.664h66.402v11.082c0 5.77 3.309 11.027 8.512 13.524a15.01 15.01 0 0 0 15.875-1.82c20.313-16.294 44.852-24.907 70.953-24.907 62.598 0 113.524 50.926 113.524 113.523zm0 0"/>
+                                        </svg>
+                                    </a>
+                                    <a href="https://www.instagram.com/iacsc1810/" class="social-link" title="Instagram">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill='#d41645' viewBox="0 0 24 24">
+                                            <path d="M12 9.3a2.7 2.7 0 1 0 0 5.4 2.7 2.7 0 0 0 0-5.4Zm0-1.8a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9Zm5.85-.225a1.125 1.125 0 1 1-2.25 0 1.125 1.125 0 0 1 2.25 0ZM12 4.8c-2.227 0-2.59.006-3.626.052-.706.034-1.18.128-1.618.299a2.59 2.59 0 0 0-.972.633 2.601 2.601 0 0 0-.634.972c-.17.44-.265.913-.298 1.618C4.805 9.367 4.8 9.714 4.8 12c0 2.227.006 2.59.052 3.626.034.705.128 1.18.298 1.617.153.392.333.674.632.972.303.303.585.484.972.633.445.172.918.267 1.62.3.993.047 1.34.052 3.626.052 2.227 0 2.59-.006 3.626-.052.704-.034 1.178-.128 1.617-.298.39-.152.674-.333.972-.632.304-.303.485-.585.634-.972.171-.444.266-.918.299-1.62.047-.993.052-1.34.052-3.626 0-2.227-.006-2.59-.052-3.626-.034-.704-.128-1.18-.299-1.618a2.619 2.619 0 0 0-.633-.972 2.595 2.595 0 0 0-.972-.634c-.44-.17-.914-.265-1.618-.298-.993-.047-1.34-.052-3.626-.052ZM12 3c2.445 0 2.75.009 3.71.054.958.045 1.61.195 2.185.419A4.388 4.388 0 0 1 19.49 4.51c.457.45.812.994 1.038 1.595.222.573.373 1.227.418 2.185.042.96.054 1.265.054 3.71 0 2.445-.009 2.75-.054 3.71-.045.958-.196 1.61-.419 2.185a4.395 4.395 0 0 1-1.037 1.595 4.44 4.44 0 0 1-1.595 1.038c-.573.222-1.227.373-2.185.418-.96.042-1.265.054-3.71.054-2.445 0-2.75-.009-3.71-.054-.958-.045-1.61-.196-2.185-.419A4.402 4.402 0 0 1 4.51 19.49a4.414 4.414 0 0 1-1.037-1.595c-.224-.573-.374-1.227-.419-2.185C3.012 14.75 3 14.445 3 12c0-2.445.009-2.75.054-3.71s.195-1.61.419-2.185A4.392 4.392 0 0 1 4.51 4.51c.45-.458.994-.812 1.595-1.037.574-.224 1.226-.374 2.185-.419C9.25 3.012 9.555 3 12 3Z"/>
+                                        </svg>
+                                    </a>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="7e1a72c6-55a3-48a0-8b68-23f897cca5c0" />
+                        
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name" required />
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email" required />
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="text" name="subject" placeholder="Subject" required />
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="tel" name="phone" placeholder="Phone Number" required />
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="contact-submit-btn">
+                            <span>Send Message</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M15.854.146a.5.5 0 0 1 .11.54L13.026 8.74a.5.5 0 0 1-.708.233L8.5 7.5l-1.473 1.473a.5.5 0 0 1-.854-.353V6.5L1.146 1.854a.5.5 0 0 1 .708-.708L7 6.293l1.473-1.473a.5.5 0 0 1 .854.353V6.5l5.027 1.973a.5.5 0 0 1 .233.708L15.854.146z"/>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo-icon">⚙️</div>
+                        <span>IACSC Tools</span>
+                    </div>
+                    <p>Professional document processing tools for everyone</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#tools">Tools</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Popular Tools</h4>
+                    <ul>
+                        <li><a href="#" data-tool="merge-pdf">Merge PDF</a></li>
+                        <li><a href="#" data-tool="split-pdf">Split PDF</a></li>
+                        <li><a href="#" data-tool="compress-pdf">Compress PDF</a></li>
+                        <li><a href="#" data-tool="pdf-to-word">PDF to Word</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 IACSC Tools. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Tool Modal -->
+    <div class="modal" id="toolModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalTitle">Tool Name</h2>
+                <button class="modal-close" id="modalClose">×</button>
+            </div>
+            <div class="modal-body" id="modalBody">
+                <!-- Tool content will be dynamically loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <div class="toast-content">
+            <span class="toast-icon">✓</span>
+            <span class="toast-message" id="toastMessage">Success!</span>
+        </div>
+    </div>
+	<script src="./watsapp.js" id="my-custom-widget"></script>
+    <script src="script.js"></script>
+</body>
+</html>
