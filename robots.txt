@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://pdfmastertool.github.io/iacsc-multi-tool/sitemap.xml
